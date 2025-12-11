@@ -1,0 +1,390 @@
+/* Reset & base */
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #a80000;
+    background: #fff;
+    padding:18px;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Navigation */
+.topnav {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 400;
+}
+
+.navinner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: px;
+    size: 40px;
+}
+
+.logo {
+    width: 80px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.brand-text strong {
+    display: block;
+    font-size: 30px;
+
+
+}
+
+.brand-text small {
+    color: #666;
+    font-size: 15px;
+}
+
+/* Menu */
+.menu a {
+    margin-left: 8px;
+    text-decoration: none;
+    color: #c00000;
+    font-weight: 700;
+    font-size: 18px;
+    gap: px;
+}
+
+.menu .btn {
+    background: #f89999;
+    color: #000000;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    padding: 40px 0 20px;
+    background: #fff;
+}
+
+.hero-inner {
+    max-width: 12000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 16px 0 20px;
+    color: #5e0000;
+    font-weight: 800;
+}
+
+.badges {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.badges span {
+    border: 1px solid #96000063;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #550000;
+    font-size: 20px;
+}
+
+/* Hero banner image strip */
+.hero-banner {
+    height: 500px;
+    background-image: url("1.png");
+    background-position: center;
+    background-size: cover;
+    margin-top: 15px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* About */
+.about {
+    display: flex;
+    gap: 28px;
+    padding: 40px 0;
+    align-items: center;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 720px;
+    border: 6px solid #fff;
+    box-shadow: 0 8px 20px rgba(20, 20, 20, 0.06);
+}
+
+.about-text h2 {
+    margin: 0 0 12px;
+    color: #222;
+}
+
+.lead {
+    color: #555;
+    line-height: 1.6;
+}
+
+.muted {
+    color: #888;
+}
+
+.certs img {
+    height: 42px;
+    margin-right: 12px;
+    opacity: 0.9;
+}
+
+/* Products */
+.section {
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 18px;
+    font-weight: 800;
+    color: #000000;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    gap: 50px;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-body h4 {
+    margin: px;
+    font-size: 25px;
+    align-items: center;
+}
+
+.product-body p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Industries circular grid */
+.circle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 900px;
+    margin: 18px auto 0;
+    justify-items: center;
+    padding-top: 12px;
+}
+
+.circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+
+}
+
+.circle-item img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.circle-item span {
+    font-weight: 700;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Testimonials */
+.test-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 900px;
+    margin: 16px auto;
+    ;
+}
+
+.test-card {
+    background: #fafafa;
+    padding: 18px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.test-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.test-author img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.test-author small {
+    display: block;
+    color: #777;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #ddd;
+    margin-top: 40px;
+    padding: 30px 0;
+}
+
+.footer-inner {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-col {
+    max-width: 300px;
+}
+
+.logo-sm {
+    width: 70px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col li {
+    color: #bbb;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.socials a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    padding-top: 12px;
+    margin-top: 18px;
+    text-align: center;
+    color: #bbb;
+}
+
+/* Responsive */
+@media (max-width:900px) {
+    .product-grid {
+        grid-template-columns: 1fr
+    }
+
+    .test-grid {
+        grid-template-columns: 1fr
+    }
+
+    .circle-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .about {
+        flex-direction: column
+    }
+
+    .hero h1 {
+        font-size: 26px
+    }
+}
+
+@media (max-width:520px) {
+    .menu a {
+        display: none
+    }
+
+    .circle-grid {
+        grid-template-columns: 1fr
+    }
+
+    .brand-text small {
+        display: none
+    }
+}
